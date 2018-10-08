@@ -1,0 +1,21 @@
+@keyframes flicker {
+  0% { opacity: 0.9; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.9; }
+}
+
+.lazyload[data-img-url] {
+  padding: 20px 50px;
+  background-color: $grey-lighter;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: unset;
+  opacity: 0.9;
+  transition: opacity $fast $ease-out;
+  animation: flicker 1s ease-out 0s infinite;
+
+  &.is-hidden {
+    opacity: 0.5;
+    animation: none;
+  }
+}

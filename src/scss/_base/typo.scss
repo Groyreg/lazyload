@@ -1,0 +1,48 @@
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+  font-weight: 400;
+}
+
+.fz10 {
+  @include fz10;
+}
+
+.fz11 {
+  @include fz11;
+}
+
+.fz12 {
+  @include fz12;
+}
+
+.fz13 {
+  @include fz13;
+}
+
+.fz14 {
+  @include fz14;
+}
+
+.fz16 {
+  @include fz16;
+}
+
+.fz17 {
+  @include fz17;
+}
+
+.fz18 {
+  @include fz18;
+}

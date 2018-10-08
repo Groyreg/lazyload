@@ -1,0 +1,13 @@
+@mixin lines-shown($fz: $base-font-size, $lh: $base-font-size, $lines-shown: 1) {
+  $font-size: strip-units($fz);
+  $line-height: strip-units($lh);
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: rem($line-height * $lines-shown);
+  -webkit-line-clamp: $lines-shown;
+  -webkit-box-orient: vertical;
+  font-size: rem($font-size);
+  line-height: ($line-height/$font-size);
+}

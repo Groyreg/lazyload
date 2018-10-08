@@ -1,0 +1,92 @@
+@mixin h1 {
+  font-family: $moreno;
+  font-size: rem(18);
+  line-height: (21.6/18);
+
+  @media #{$md} {
+    font-size: rem(24);
+    line-height: (30/24);
+  }
+
+  @media #{$lg} {
+    font-size: rem(36);
+    line-height: (40/36);
+  }
+}
+
+@mixin h2 {
+  font-family: $moreno;
+  font-size: rem(18);
+  line-height: (21.6/18);
+
+  @media #{$md} {
+    font-size: rem(21);
+    line-height: (25.2/21);
+  }
+
+  @media #{$xl} {
+    font-size: rem(24);
+    line-height: (28.8/24);
+  }
+}
+
+@mixin h3 {
+  font-family: $moreno;
+  font-size: rem(18);
+  line-height: (21.6/18);
+  letter-spacing: rem(0.9);
+}
+
+@mixin h4 {
+  font-size: rem(18);
+  line-height: (21.6/18);
+  letter-spacing: rem(0.9);
+}
+
+@mixin fz10 {
+  font-size: rem(10);
+  line-height: (12/10);
+  letter-spacing: rem(0.1);
+}
+
+@mixin fz11 {
+  font-size: rem(11);
+  line-height: (14/11);
+  letter-spacing: rem(0.3);
+}
+
+@mixin fz12 {
+  font-size: rem(12);
+  line-height: (20/12);
+  letter-spacing: rem(0.9);
+}
+
+@mixin fz13 {
+  font-size: rem(13);
+  line-height: (20/13);
+  letter-spacing: rem(0.7);
+}
+
+@mixin fz14 {
+  font-size: rem(14);
+  line-height: (20/14);
+  letter-spacing: rem(0.7);
+}
+
+@mixin fz16 {
+  font-size: rem(16);
+  line-height: (20/16);
+  letter-spacing: rem(0.9);
+}
+
+@mixin fz17 {
+  font-size: rem(17);
+  line-height: (20/17);
+  letter-spacing: rem(0.85);
+}
+
+@mixin fz18 {
+  font-size: rem(18);
+  line-height: (21.6/18);
+  letter-spacing: rem(0.9);
+}

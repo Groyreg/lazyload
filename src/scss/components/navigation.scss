@@ -1,0 +1,34 @@
+.navigation {
+  background-color: $blue;
+
+  &__logo {
+    color: #FFF;
+    border-bottom: 2px solid transparent;
+
+
+  }
+
+  &__toggler {
+
+  }
+
+  &__list {
+  
+
+    &-item {
+
+    }
+
+    &-link {
+      color: #FFF;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: #FFF;
+        border-color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+}

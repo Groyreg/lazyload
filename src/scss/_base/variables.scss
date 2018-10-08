@@ -1,0 +1,110 @@
+/* Breakpoints */
+$bp-xs: 320;
+$bp-sm: 480;
+$bp-md: 768;
+$bp-lg: 1024;
+$bp-xl: 1280;
+$bp-ws: 1600;
+$max-inner-width: 1170;
+
+/* Colors */
+$blue: #4A99FE;
+$blue-lighter: #4596FF;
+$blue-light: #6FC3FF;
+$blue-light-2: #6EADFE;
+$blue-very-light: #DDECFF;
+
+$purple: #4410B2;
+$purple-lighter: #4D1BB6;
+$purple-light: #8564C8;
+
+$green: #94BF08;
+$green-bright: #4CD964;
+$green-very-light: #DDF8E1;
+
+$red: #FF151B;
+$red-bright: #FD908A;
+$red-lighter: #FF3B30;
+$red-light: #FEE;
+
+$orange: #FEBF7D;
+$orange-darker: #FE9B4F;
+
+$grey-very-dark: #363636;
+$grey-dark: #757575;
+$grey-darker: #9E9E9E;
+$grey: #BDBDBD;
+$grey-lighter:#E0E0E0;
+$grey-light: #F1F1F1;
+$grey-very-light: #F7F8FA;
+
+$black: black;
+$white: white;
+
+$box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
+
+$text-main: black;
+$text-secondary: $grey;
+$text-grey: $grey-dark;
+
+/* Fonts */
+$base-font-size: 16;
+$stem: Stem,Tahoma,Verdana,Segoe,sans-serif;
+$moreno: Moreno,Tahoma,Verdana,Segoe,sans-serif;
+
+/* Media queries */
+$sm: '(min-width: #{rem($bp-sm)})';
+$md: '(min-width: #{rem($bp-md)})';
+$lg: '(min-width: #{rem($bp-lg)})';
+$xl: '(min-width: #{rem($bp-xl)})';
+$ws: '(min-width: #{rem($bp-ws)})';
+
+$only-xs: '(max-width: #{rem(($bp-sm - 1))})';
+$only-sm: '(min-width: #{rem($bp-sm)}) and (max-width: #{rem(($bp-md - 1))})';
+$only-md: '(min-width: #{rem($bp-md)}) and (max-width: #{rem(($bp-lg - 1))})';
+$only-lg: '(min-width: #{rem($bp-lg)}) and (max-width: #{rem(($bp-xl - 1))})';
+$only-xl: '(min-width: #{rem($bp-xl)}) and (max-width: #{rem(($bp-ws - 1))})';
+
+$up-to-sm: '(max-width: #{rem(($bp-sm - 1))})';
+$up-to-md: '(max-width: #{rem(($bp-md - 1))})';
+$up-to-lg: '(max-width: #{rem(($bp-lg - 1))})';
+$up-to-xl: '(max-width: #{rem(($bp-xl - 1))})';
+$up-to-ws: '(max-width: #{rem(($bp-ws - 1))})';
+
+@media #{$sm} {}
+@media #{$md} {}
+@media #{$lg} {}
+@media #{$xl} {}
+@media #{$ws} {}
+@media #{$only-xs} {}
+@media #{$only-sm} {}
+@media #{$only-md} {}
+@media #{$only-lg} {}
+@media #{$only-xl} {}
+@media #{$up-to-sm} {}
+@media #{$up-to-md} {}
+@media #{$up-to-lg} {}
+@media #{$up-to-xl} {}
+@media #{$up-to-ws} {}
+
+/* Transitions */
+$very-fast: 0.15s;
+$fast: 0.25s;
+$medium: 0.4s;
+$slow: 0.8s;
+$very-slow: 1.5s;
+
+$ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+/* Z-index */
+
+$zi-layer-under: -1;
+$zi-layer-1: 2;
+$zi-layer-2: 3;
+$zi-layer-3: 4;
+$zi-menu: 5;
+$zi-menu-2: 6;
+$zi-dropdown: 9;
+$zi-popup: 10;
+$zi-select: 11;

@@ -1,0 +1,25 @@
+@mixin disabled() {
+  position: relative;
+  pointer-events: none;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@mixin enabled() {
+  position: relative;
+  pointer-events: initial;
+
+  &:after {
+    content: '';
+    display: none;
+  }
+}

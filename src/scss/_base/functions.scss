@@ -1,0 +1,25 @@
+@function em($val, $base: $base-font-size) {
+  @if not unitless($val) {
+    $pxval: strip-units($val);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return ($val / $base) * 1em;
+}
+
+@function rem($val) {
+  @if not unitless($val) {
+    $pxval: strip-units($val);
+  }
+  @if not unitless($base-font-size) {
+    $base: strip-units($base-font-size);
+  }
+
+  @return ($val / $base-font-size) * 1rem;
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}

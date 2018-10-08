@@ -1,0 +1,41 @@
+/* Sass tools */
+@import './../../node_modules/bourbon/core/_bourbon.scss';
+
+/* Normalize */
+@import './../../node_modules/normalize.css/normalize.css';
+
+/* Plugins */
+@import './../../node_modules/bootstrap/dist/css/bootstrap.css';
+/*
+   Base
+      - project foundation: variables, mixins, helpers, etc.
+*/
+@import '_base/fonts';
+@import '_base/functions';
+@import '_base/variables';
+@import '_base/mixins';
+@import '_base/base';
+@import '_base/helpers';
+@import '_base/img';
+@import '_base/layout';
+@import '_base/overrides';
+@import '_base/typo';
+
+/*
+   Common Blocks
+      - simple common page elements: buttons, inputs, etc.
+*/
+
+/*
+   Component Blocks
+      - components: header, footer, product, etc.
+*/
+@import 'components/lazyload';
+@import 'components/main-page';
+@import 'components/navigation';
+
+/*
+   Page Blocks
+      - page specific blocks: main-page, catalog, etc.
+*/
+

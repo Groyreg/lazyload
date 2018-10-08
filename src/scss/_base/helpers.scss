@@ -1,0 +1,193 @@
+.h-hidden {
+  @include hidden;
+}
+
+.h-only-sm {
+  display: none;
+
+  @media #{$only-sm} {
+    display: block;
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.h-except-sm {
+  display: block;
+
+  @media #{$only-sm} {
+    display: none;
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: none;
+      }
+    }
+  }
+}
+
+.h-only-md {
+  display: none;
+
+  @media #{$only-md} {
+    display: block;
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.h-except-md {
+  display: block;
+
+  @media #{$only-md} {
+    display: none;
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: none;
+      }
+    }
+  }
+}
+
+.h-only-lg {
+  @media #{$only-lg} {
+    display: block;
+
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.h-only-xl {
+  display: none;
+
+  @media #{$only-xl} {
+    display: block;
+
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.h-only-ws {
+  display: none;
+
+  @media #{$ws} {
+    display: block;
+
+    @at-root {
+      th#{&},
+      td#{&} {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.h-underline {
+  text-decoration: underline;
+}
+
+// Align
+
+.h-va-m {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Margins
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.h-mr-5 {
+  margin-right: 5px;
+}
+
+.h-mr-10 {
+  margin-right: 10px;
+}
+
+.h-mr-15 {
+  margin-right: 15px;
+}
+
+.h-mr-20 {
+  margin-right: 20px;
+}
+
+.h-ml-5 {
+  margin-left: 5px;
+}
+
+.h-ml-10 {
+  margin-left: 10px;
+}
+
+.h-ml-15 {
+  margin-left: 15px;
+}
+
+.h-ml-20 {
+  margin-left: 20px;
+}
+
+.h-mt-5 {
+  margin-top: 5px;
+}
+
+.h-mt-10 {
+  margin-top: 10px;
+}
+
+.h-mt-15 {
+  margin-top: 15px;
+}
+
+.h-mt-20 {
+  margin-top: 20px;
+}
+
+.h-mb-5 {
+  margin-bottom: 5px;
+}
+
+.h-mb-10 {
+  margin-bottom: 10px;
+}
+
+.h-mb-15 {
+  margin-bottom: 15px;
+}
+
+.h-mb-20 {
+  margin-bottom: 20px;
+}
+
+// Rotate
+
+.h-rotate-minus-90 {
+  transform: rotate(-0.25turn);
+}

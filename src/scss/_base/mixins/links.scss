@@ -1,0 +1,35 @@
+@mixin link($color: $text-main, $hover: $blue) {
+  transition: color $fast $ease-out;
+  text-decoration: none;
+  color: $color;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover;
+  }
+}
+
+@mixin link-underline($color: $blue, $height: 1px) {
+  position: relative;
+  display: inline-block;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: $height;
+    width: 100%;
+    background-color: $color;
+    opacity: 0;
+    transition: opacity $fast $ease-out;
+  }
+
+  &:hover,
+  &:active {
+    &:after {
+      opacity: 1;
+    }
+  }
+}

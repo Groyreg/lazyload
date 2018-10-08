@@ -1,0 +1,98 @@
+html {
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: $stem;
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    outline: none;
+  }
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  padding: 0 !important;
+  min-width: 320px;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type=text],
+[type=email],
+[type=url],
+[type=tel],
+[type=password],
+textarea {
+  font-family: $stem;
+  font-size: rem(12);
+  line-height: (20/12);
+  letter-spacing: rem(0.7);
+  outline: none;
+  padding: rem(10);
+  border: 1px solid $grey;
+  border-radius: 0;
+  transition: border-color $fast $ease-out;
+  -webkit-appearance: none;
+  
+  &::-webkit-input-placeholder {
+    color: $text-secondary;
+    transition: color $medium $ease-out;
+  }
+  
+  &::-moz-placeholder {
+    color: $text-secondary;
+    transition: color $medium $ease-out;
+  }
+  
+  &::-ms-placeholder {
+    color: $text-secondary;
+    transition: color $medium $ease-out;
+  }
+  
+  &::placeholder {
+    color: $text-secondary;
+    transition: color $medium $ease-out;
+  }
+  
+  &:focus {
+    &::-webkit-input-placeholder { color: transparent; }
+    &::-moz-placeholder { color: transparent; }
+    &::-ms-placeholder { color: transparent; }
+    &::placeholder { color: transparent; }
+    border-color: $blue;
+  }
+
+  @media #{$md} {
+    font-size: em(13);
+  }
+}
+
+label {
+  &.required {
+    &:after {
+      content: ' *';
+      color: $red;
+    }
+  }
+}

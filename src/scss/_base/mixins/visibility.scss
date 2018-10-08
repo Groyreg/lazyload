@@ -1,0 +1,32 @@
+@mixin hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin visible() {
+  clip: initial;
+  overflow: initial;
+  height: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  border: initial;
+}
+
+@mixin transition-hidden($valY: 10px, $valX: 0, $speed: $fast) {
+  opacity: 0;
+  transform: translate($valX, $valY);
+  transition: transform $speed $ease-out, opacity $speed $ease-out;
+}
+
+@mixin transition-visible($valY: 0, $valX: 0, $speed: $fast) {
+  opacity: 1;
+  transform: translate($valX, $valY);
+  transition: transform $speed $ease-out, opacity $speed $ease-out;
+}
